@@ -9,7 +9,7 @@ from datetime import date
 load_dotenv(dotenv_path="./.env")
 
 
-CHANNEL_HANDLE = os.getenv("MrBeast")
+CHANNEL_HANDLE = "MrBeast"
 API_KEY = os.getenv("API_KEY")
 url = f"https://youtube.googleapis.com/youtube/v3/channels?part=contentDetails&forHandle={CHANNEL_HANDLE}&key={API_KEY}"
 
