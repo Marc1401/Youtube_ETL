@@ -125,7 +125,7 @@ def save_to_json(extracted_data):
 # convert the video ids result to a json file
 #./data/YT_data_{date.today()}.json
 
-    file_path = f"./data.json"
+    file_path = f"./data/YT_data_{date.today()}.json"
     with open(file_path, "w" , encoding="utf-8") as json_outfile: 
         json.dump(extracted_data, json_outfile, indent=4, ensure_ascii=False)
 
